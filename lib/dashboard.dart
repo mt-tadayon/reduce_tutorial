@@ -106,15 +106,28 @@ class _DashboardState extends State<Dashboard> {
               ),
             ),
             DataRow(cells: [
-              DataCell(Text(
-                'Total amount',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              )),
               DataCell(
-                ///ToDo: Calculate the total price for all items
-                Text(items
-                    .fold(0, (prev, el) => prev + el.itemPrice)
-                    .toString()),
+                Text('Total Expenses'),
+              ),
+              DataCell(
+                //TODO: Calculate the total expenses
+                Text(
+                  items.isNotEmpty
+                      ? items
+                          .map((e) => e.itemPrice)
+                          .reduce((value, element) => value + element)
+                          .toString()
+                      : '0',
+                ),
+              )
+            ]),
+            DataRow(cells: [
+              DataCell(Text('Rest Budget')),
+              DataCell(
+                //TODO: Calculate the rest budget with an init budget of 200
+                Text(
+                  items.fold(200, (a, b) => a - b.itemPrice).toString(),
+                ),
               )
             ])
           ])
