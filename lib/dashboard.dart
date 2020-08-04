@@ -126,7 +126,7 @@ class _DashboardState extends State<Dashboard> {
               DataCell(
                 //TODO: Calculate the rest budget with an init budget of 200
                 Text(
-                  items.fold(200, (a, b) => a - b.itemPrice).toString(),
+                  items.fold(200, (prev, element) => prev - element.itemPrice).toString(),
                 ),
               )
             ])
