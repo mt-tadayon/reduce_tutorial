@@ -3,8 +3,8 @@
 # List Method: .fold()
 
 This is an application with a Form and a DataTable. You can add new items with a price in the InputField and see all items with the total amount in the table.
-- [You can find the link to the YouTube video here.](https://youtu.be/rzdmjnA_5xQ)
-- [The link to DartPad with three example of using fold method](https://dartpad.dev/a64685664fccd0c9462123a5a06b38a7)
+- [You can find the link to the YouTube video here.]()
+- [The link to DartPad with three example of using reduce and fold method](https://dartpad.dev/ba2544c47094780e01fe544d67bb3bdb)
 
 ## Getting Started
 
